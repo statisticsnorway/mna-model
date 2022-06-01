@@ -6,10 +6,6 @@ import pandas as pd
 from symengine import var, Matrix, Lambdify
 from numba import njit
 
-
-# CLASS ####################################################################
-
-
 class MNAModel:
     """
     EXAMPLE OF USE USE:
@@ -622,6 +618,3 @@ class MNAModel:
         net.from_nx(subgraph_to_pyvis)
         net.repulsion(node_distance=50, central_gravity=0.01, spring_length=100, spring_strength=0.02, damping=0.5)
         net.show('graph.html')
-    
-    
-# END OF CLASS ############################################################
